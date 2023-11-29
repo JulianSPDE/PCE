@@ -10,4 +10,4 @@ This repository contains all the code necessary to reproduce the plots in the pa
 	3.) PCE_solver.m for a single iPCE simulation
 	4.) MonteCarlo_Nonlinear_Solver.m to generate a single MC, QMC or GQ niPCE simulation for mean or variance
 	5.) Performance_Plot.m for iPCE and niPCE simulations, comparing to a reference solution and plotting the errors depending on M.
-
+- PCE_supplementary_tables.pdf contains two tables showing the numbers of time steps and quadrature points used for all the simulations performed in the paper as well as a table showing the runtimes needed to produce the plots on our machine. The main takeaway from the runtime table is that the runtimes for iPCE and niPCE are roughly equal except for the cases with the cubic term, where iPCE starts to struggle with instabilities across the board and the number of time steps needs to increased substantially, and the case of D=! and the quadratic term for explicit Euler, where also the time step number has to be increased substantially due to instabilities.
